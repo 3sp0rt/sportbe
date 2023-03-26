@@ -18,6 +18,7 @@ server.use(indexRoutes);
 // Control de sitio no encontrado
 server.all("*", function (req, res) {
   res.status(404);
+  res.send("Not found");
   return;
 });
 
